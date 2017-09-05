@@ -104,8 +104,8 @@ function f711_get_post_content_callback()
                             <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'post'); ?>
                             <img height="270px" width="100%" src="<?php echo $thumb[0] ?>">
                             <figcaption>
-                                <a href="<?php the_field('pdf', $post->ID) ?>" class="pdf" download><i
-                                            class="fa fa-file-pdf-o"></i></a>
+<!--                                <a href="--><?php //the_field('pdf', $post->ID) ?><!--" class="pdf" download><i-->
+<!--                                            class="fa fa-file-pdf-o"></i></a>-->
                                 <button class="btn more post" data-toggle="modal"
                                         data-target="#<?php echo $post->ID ?>">More
                                 </button>
