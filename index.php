@@ -238,25 +238,8 @@
             <div class="col-md-12">
                 <div style="direction: ltr !important;" class="form-group">
                    <?php echo do_shortcode ('[contact-form-7 id="113" title="contact form"]')?>
-<!--                    <input type="name" placeholder="Name" class="form-control" id="name">-->
                 </div>
             </div>
-<!--            <div class="col-md-12">-->
-<!--                <div class="form-group">-->
-<!--                    <input type="email" placeholder="your Email" class="form-control" id="email">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-12">-->
-<!--                <div class="form-group">-->
-<!--                    <input placeholder="your phone" type="tel" class="form-control" id="tel">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-12">-->
-<!--                <div class="form-group">-->
-<!--                    <textarea placeholder="your massege" class="form-control comment" rows="5" id="massege"></textarea>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <button class="btn btn-contact">SUBMIT</button>-->
         </div>
         <div class="col-md-6 col-xs-12">
             <h2 class="contact"><?php the_field('contact_info',11) ?></h2>
