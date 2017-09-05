@@ -72,7 +72,7 @@
     </div>
 </nav>
 <div class="sliders-img">
-<?php echo do_shortcode ('[rev_slider alias="sliders"]') ?>
+<?php echo do_shortcode ('[layerslider id="1"]') ?>
 </div>
 <main id="about" class="container">
     <p class="text-center about-T"><?php the_field('about',7) ?></p>
@@ -377,6 +377,5 @@
     });
 </script>
 
-<?php wp_footer(); ?>
 </body>
 </html>
