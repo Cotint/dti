@@ -53,6 +53,7 @@ $(document).ready(function () {
     $('#centerslider').owlCarousel({
         rtl: true,
         loop: false,
+        center:true,
         margin: 20,
         nav: true,
         navText: ["<i class='fa fa-chevron-right prev'></i>", "<i class='fa fa-chevron-left next'></i>"],
