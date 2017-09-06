@@ -186,7 +186,10 @@ a {
     transition: all 400ms;
   }
 }
-
+.contact-a1{
+  height: 20px;
+  overflow: auto;
+}
 .slider {
   width: 100px;
   &.owl-theme .owl-nav [class*=owl-] {
@@ -775,7 +778,14 @@ figure.effect-ming:hover img {
 .pdf{
   position: relative;
   left: 20px;
-
+}
+.btnpdf{
+  width: 150px;
+  height: 35px;
+  color: #222;
+  background-color: #0dbff2;
+  position: relative;
+  left: -120px;
 }
 .more{
   width: 100px;
@@ -1038,6 +1048,9 @@ figure.effect-ming:hover img {
     margin-top: 11px;
     color: $color-gray;
   }
+  a{
+    cursor: pointer;
+  }
   &:hover {
     background-color: $color-light-blue;
     transition: all 400ms;
@@ -1049,9 +1062,10 @@ figure.effect-ming:hover img {
 }
 
 .font-footer {
-  font-size: 18px;
+  font-size: 14px;
   color: $color-white;
-  margin-left: 565px;
+  display: block;
+  margin: 0 auto;
 }
 .blue{
   width: 100%;
@@ -1079,15 +1093,24 @@ figure.effect-ming:hover img {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 85px;
+  top: 50px;
   z-index: 10000;
+}
+.imagew{
+  margin-bottom: 60px;
 }
 .marker{
   font-size: 34px;
-  position: relative;
-  left: 634px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   color: $color-light-blue;
-  top:20px;
+  display: block;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 27px;
   z-index: 50000;
 }
 .form-control{
@@ -1095,8 +1118,9 @@ figure.effect-ming:hover img {
 }
 .nav-fix{
   position:fixed;
-  top:0;
+
   z-index:1000;
+  margin-top: -100px;
   width: 100%;
   border-bottom: 2px solid  $color-light-blue;
   height: 60px;
@@ -1113,6 +1137,6 @@ figure.effect-ming:hover img {
 }
 .cotint{
   color: $color-green-cotint;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }

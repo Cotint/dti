@@ -1,27 +1,21 @@
 @font-face {
   font-family:'sans';
-  src:url('app/fonts/IRANSans/IRANSansWeb_Light.woff') format('woff'),
-  url(app/fonts/IRANSans/IRANSansWeb_Light.eot) format('eot'),
-  url(app/fonts/IRANSans/IRANSansWeb_Light.eot?#iefix) format('embedded-opentype'),
-  url('app/fonts/IRANSans/IRANSansWeb_Light.ttf') format('truetype');
+  src:url('app/fonts/bell.ttf') format('ttf');
+  //url(app/fonts/IRANSans/IRANSansWeb_Light.eot) format('eot'),
+  //url(app/fonts/IRANSans/IRANSansWeb_Light.eot?#iefix) format('embedded-opentype'),
+  //url('app/fonts/IRANSans/IRANSansWeb_Light.ttf') format('truetype');
   font-weight:normal;
   font-style:normal;
   font-variant:normal;
 }
 @font-face {
   font-family:'sansMedium';
-  src:url('app/fonts/IRANSansMedium/IRANSansWeb_Medium.woff') format('woff'),
-  url(app/fonts/IRANSansMedium/IRANSansWeb_Medium.eot) format('eot'),
-  url(app/fonts/IRANSansMedium/IRANSansWeb_Medium.eot?#iefix) format('embedded-opentype'),
-  url('app/fonts/IRANSansMedium/IRANSansWeb_Medium.ttf') format('truetype');
+  src:url('app/fonts/bell.ttf') format('ttf');
   font-weight:bold;
 }
 @font-face {
   font-family:'sansBold';
-  src:url('app/fonts/IRANSansBold/IRANSansWeb_Bold.woff') format('woff'),
-  url(app/fonts/IRANSansBold/IRANSansWeb_Bold.eot) format('eot'),
-  url(app/fonts/IRANSansBold/IRANSansWeb_Bold.eot?#iefix) format('embedded-opentype'),
-  url('app/fonts/IRANSansBold/IRANSansWeb_Bold.ttf') format('truetype');
+  src:url('app/fonts/bell.ttf') format('ttf');
   font-weight:bold;
 }
 //
