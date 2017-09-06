@@ -1,21 +1,19 @@
 @font-face {
-  font-family:'sans';
-  src:url('app/fonts/bell.ttf') format('ttf');
+  font-family: 'sans';
+  src: url('../fonts/bell.ttf') format('ttf');
   //url(app/fonts/IRANSans/IRANSansWeb_Light.eot) format('eot'),
   //url(app/fonts/IRANSans/IRANSansW
+}
 @font-face {
-  font-family:'sansMedium';eb_Light.eot?#iefix) format('embedded-opentype'),
-  //url('app/fonts/IRANSans/IRANSansWeb_Light.ttf') format('truetype');
-font-weight:normal;
+  font-family:'bell';
+  font-weight:normal;
   font-style:normal;
   font-variant:normal;
-}
-  src:url('app/fonts/bell.ttf') format('ttf');
-  font-weight:bold;
+  src:url('../fonts/bell.ttf') format('ttf');
 }
 @font-face {
   font-family:'sansBold';
-  src:url('app/fonts/bell.ttf') format('ttf');
+  src:url('../fonts/bell.ttf') format('ttf');
   font-weight:bold;
 }
 //
@@ -32,7 +30,7 @@ label,
 p,
 span,
 h1,h2,h3,h4,h5,h6 {
-  font: 12px/25px sansMedium,tahoma;
+  font: 12px/25px bell,tahoma;
 }
 hr{
   margin-bottom: 1px !important;
