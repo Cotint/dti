@@ -21,7 +21,7 @@
     <section class="container">
         <header class="col-xs-12 col-md-12 top-th">
             <address class="pull-left">
-                <i style="color:#0dbff2;" class="fa fa-phone"></i> <?php the_field('phone',11) ?> <a href="<?php the_field('email',11) ?>"><i
+                <i style="color:#0dbff2;" class="fa fa-phone"></i> <?php the_field('phone',11) ?> <a href="mailto:<?php the_field('email',11) ?>"><i
                             style="color:#0dbff2;" class="fa fa-envelope"></i><?php the_field('email',11) ?></a>
             </address>
             <aside class="pull-right">
@@ -72,7 +72,7 @@
     </div>
 </nav>
 <div class="sliders-img">
-<?php echo do_shortcode ('[rev_slider alias="sliders"]') ?>
+<?php echo do_shortcode ('[layerslider id="1"]') ?>
 </div>
 <main id="about" class="container">
     <p class="text-center about-T"><?php the_field('about',7) ?></p>
@@ -185,13 +185,20 @@
     ]);
     foreach ($categories as $category) {
         ?>
-       <button data-href="test1.html" cat_id="<?=$category->term_id?>" class="btn btn-class cat"><?=$category->name?></button>
+       <li data-href="test1.html" cat_id="<?=$category->term_id?>" class="btn btn-class cat"><?=$category->name?></li>
         <?php
     }
     ?>
 
 </div>
     <div class="result">
+        <main class="container-fluid">
+            <section class="row">
+                <div class="grid firest">
+
+                </div>
+            </section>
+        </main>
     </div>
 </main>
 
@@ -238,6 +245,7 @@
             <div class="col-md-12">
                 <div style="direction: ltr !important;" class="form-group">
                    <?php echo do_shortcode ('[contact-form-7 id="113" title="contact form"]')?>
+                    <br>
                 </div>
             </div>
         </div>
@@ -277,7 +285,7 @@
                 </div>
                 <div class="col-md-10 text-Contact">
                     <span>E-MAIL</span>
-                    <P><?php the_field('email',11) ?></P>
+                    <P><a style="color: #222222" href="mailto:<?php the_field('email',11) ?>"><?php the_field('email',11) ?></a></P>
                 </div>
             </div>
         </div>
@@ -343,8 +351,8 @@
                 data: {
                     'data_id': data_id,
                     'action': 'f711_get_post_content' //this is the name of the AJAX method called in WordPress
-                }, success: function (result) {
-                    $('.result').html(result);
+                }, success: function (grid) {
+                    $('.grid').html(grid);
                 },
                 error: function () {
                     alert("error");
@@ -366,8 +374,8 @@
                 data: {
                     'cat_id': cat_id,
                     'action': 'f711_get_post_content' //this is the name of the AJAX method called in WordPress
-                }, success: function (result) {
-                    $('.result').html(result);
+                }, success: function (grid) {
+                    $('.grid').html(grid);
                 },
                 error: function () {
                     alert("error");
@@ -375,8 +383,20 @@
             });
         });
     });
+    $(document).ready(function () {
+        $(".portfolio li").click(function () {
+            $(".portfolio li").removeClass("active");
+            $(this).addClass("active");
+        });
+        $('.portfolio li:first-child').addClass('active').show();
+
+//        $('.cat :first-child').click(function () {
+//            var cat_id = $(this).attr('cat_id');
+//        });
+
+    });
+
 </script>
 
-<?php wp_footer(); ?>
 </body>
 </html>

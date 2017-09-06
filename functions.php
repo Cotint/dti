@@ -63,20 +63,16 @@ function f711_get_post_content_callback()
             <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">DTI</h4>
-                    </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <h2 style="font-size: 20px;"><?php echo $post->post_title ?></h2>
-                                <p><?php echo $post->post_content ?></p>
-                                <a style="position: relative; top: 7px;" href="<?php the_field('pdf', $post->ID) ?>"
-                                   download><i style="font-size: 30px;"
+                                <h2 style="font-size: 20px; text-align: left;"><?php echo $post->post_title ?></h2>
+                                <p class="text-justify"><?php echo $post->post_content ?></p>
+                                <a style="position: relative; top: 7px; left: -120px; text-align: left;" href="<?php the_field('pdf', $post->ID) ?>"
+                                   download target="_blank"><i style="font-size: 30px;"
                                                class="fa fa-file-pdf-o"></i></a>
-                                <a href="<?php the_field('pdf', $post->ID) ?>">
-                                    <button style="width: 150px; height: 35px; color: #222; background-color: #0dbff2;"
+                                <a href="<?php the_field('pdf', $post->ID) ?>" target="_blank">
+                                    <button style="width: 150px; height: 35px; color: #222; background-color: #0dbff2; position: relative; left: -120px;"
                                             class="btn">Download pdf
                                     </button>
                                 </a>
@@ -95,27 +91,17 @@ function f711_get_post_content_callback()
 
             </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="gallery">
-                <ul class="grid cs-style-3">
-                    <li>
-                        <figure>
-                            <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'post'); ?>
-                            <img height="270px" width="100%" src="<?php echo $thumb[0] ?>">
-                            <figcaption>
-<!--                                <a href="--><?php //the_field('pdf', $post->ID) ?><!--" class="pdf" download><i-->
-<!--                                            class="fa fa-file-pdf-o"></i></a>-->
-                                <button class="btn more post" data-toggle="modal"
-                                        data-target="#<?php echo $post->ID ?>">More
-                                </button>
-                            </figcaption>
-                        </figure>
-                        <h2 style="font-size: 18px;" class="text-center"><?php echo $post->post_title ?></h2>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                    <figure class="effect-ming">
+                        <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'post'); ?>
+                        <img height="270px" width="100%" src="<?php echo $thumb[0] ?>">
+                        <figcaption>
+                            <button class="btn more post" data-toggle="modal"
+                                    data-target="#<?php echo $post->ID ?>">MORE
+                                                                </button>
+                                            <p style="font-size: 18px; position: relative; top: -15px;
+    margin-top: -35px;"><?php echo $post->post_title ?></p>
+                        </figcaption>
+                    </figure>
 
     <?php }
     exit;
