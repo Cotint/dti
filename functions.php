@@ -72,8 +72,7 @@ function f711_get_post_content_callback()
                                    download target="_blank"><i style="font-size: 30px;"
                                                class="fa fa-file-pdf-o"></i></a>
                                 <a href="<?php the_field('pdf', $post->ID) ?>" target="_blank">
-                                    <button style="width: 150px; height: 35px; color: #222; background-color: #0dbff2; position: relative; left: -120px;"
-                                            class="btn">Download pdf
+                                    <button class="btn btnpdf">Download pdf
                                     </button>
                                 </a>
                             </div>
@@ -95,9 +94,7 @@ function f711_get_post_content_callback()
                         <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'post'); ?>
                         <img height="270px" width="100%" src="<?php echo $thumb[0] ?>">
                         <figcaption>
-                            <button class="btn more post" data-toggle="modal"
-                                    data-target="#<?php echo $post->ID ?>">MORE
-                                                                </button>
+                            <button class="btn more post" data-toggle="modal" data-target="#<?php echo $post->ID ?>">MORE</button>
                                             <p style="font-size: 18px; position: relative; top: -15px;
     margin-top: -35px;"><?php echo $post->post_title ?></p>
                         </figcaption>

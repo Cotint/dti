@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>tdi</title>
+    <title>damun trading co</title>
     <link rel="stylesheet" href="<?php bloginfo ('template_directory');?>/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo ('template_directory');?>/node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
     <link rel="stylesheet" href="<?php bloginfo ('template_directory');?>/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php bloginfo ('template_directory');?>/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="<?php bloginfo ('template_directory');?>/favicons.ico" rel="icon">
     <!--[if lt IE 9]>
     <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
     <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
@@ -21,7 +22,7 @@
     <section class="container">
         <header class="col-xs-12 col-md-12 top-th">
             <address class="pull-left">
-                <i style="color:#0dbff2;" class="fa fa-phone"></i> <?php the_field('phone',11) ?> <a href="mailto:<?php the_field('email',11) ?>"><i
+                 <a href="mailto:<?php the_field('email',11) ?>"><i
                             style="color:#0dbff2;" class="fa fa-envelope"></i><?php the_field('email',11) ?></a>
             </address>
             <aside class="pull-right">
@@ -42,7 +43,7 @@
             <nav class="menu1 menu--shylock">
                 <ul class="menu__list">
                     <li class="menu__item" id="aboutnav"><a class="menu__link">About us</a></li>
-                    <li class="menu__item" id="customernav"><a class="menu__link">Customer</a></li>
+                    <li class="menu__item" id="customernav"><a class="menu__link">customers</a></li>
                     <li class="menu__item" id="servicenav"><a class="menu__link">Services</a></li>
                     <li class="menu__item" id="productsnav"><a class="menu__link">Products</a></li>
                     <li class="menu__item" id="latestnav"><a class="menu__link">Latest News</a></li>
@@ -62,7 +63,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li id="aboutnav"><a href="#">about</a></li>
-                <li id="customernav"><a href="#">Customer</a></li>
+                <li id="customernav"><a href="#">customers</a></li>
                 <li id="servicenav"><a href="#">Services</a></li>
                 <li id="productsnav"><a href="#">Products</a></li>
                 <li id="latestnav"><a href="#">Latest News</a></li>
@@ -111,9 +112,9 @@
 
 
 <main id="costomers" class="container-fluid backgrund">
-    <p class="text-center about-Customer"><span style="color:#FFF; font-size: 27px;">OUR</span> <span style="color:#363636; font-size: 27px;">Costomers</span>
+    <p class="text-center about-Customer"><span style="color:#FFF; font-size: 27px;">OUR</span> <span style="color:#363636; font-size: 27px;">customers</span>
     </p>
-    <p class="text-center"><img class="image" src="<?php bloginfo ('template_directory');?>/app/images/transi.png" alt="code"></p>
+    <p class="text-center"><img class="imagew" src="<?php bloginfo ('template_directory');?>/app/images/transi.png" alt="code"></p>
     <div class="owl-carousel owl-theme slidercenter" id="centerslider">
         <?php
         if ( have_posts() ) {
@@ -148,24 +149,24 @@
         <div class="service">
             <div class="servic-box"><i class="fa fa-cogs"></i></div>
             <h2 class="text-center"><?php the_field('top_left',9) ?></h2>
-            <p class="text-justify"><?php the_field('summery_top_left',9) ?> </p>
+            <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_top_left',9) ?> </p>
         </div>
         <div class="service">
             <div class="servic-box"><i class="fa fa-cogs"></i></div>
             <h2 class="text-center"><?php the_field('bottom_left',9) ?> </h2>
-            <p class="text-justify"><?php the_field('summery_bottom_left',9) ?></p>
+            <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_bottom_left',9) ?></p>
         </div>
     </div>
     <div class="col-md-6">
         <div class="service">
             <div class="servic-box"><i class="fa fa-cogs"></i></div>
             <h2 class="text-center"><?php the_field('top_right',9) ?></h2>
-            <p class="text-justify"><?php the_field('summery_top_right',9) ?></p>
+            <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_top_right',9) ?></p>
         </div>
         <div class="service">
             <div class="servic-box"><i class="fa fa-cogs"></i></div>
             <h2 class="text-center"><?php the_field('bottom_right',9) ?></h2>
-            <p class="text-justify"><?php the_field('summery_bottom_right',9) ?> </p>
+            <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_bottom_right',9) ?> </p>
         </div>
     </div>
 </main>
@@ -272,15 +273,6 @@
             </div>
             <div class="row">
                 <div class="col-md-1">
-                    <div class="social"><i class="fa fa-fax"></i></div>
-                </div>
-                <div class="col-md-10 text-Contact">
-                    <span>FAX</span>
-                    <P><?php the_field('fax',11) ?></P>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1">
                     <div class="social"><i class="fa fa-envelope"></i></div>
                 </div>
                 <div class="col-md-10 text-Contact">
@@ -293,8 +285,8 @@
 </main>
 <main class="container-fluid">
     <section class="row">
-        <div id="diamond"></div>
-        <i class="fa fa-map-marker marker"></i>
+        <div id="diamond"><i class="fa fa-map-marker marker"></i></div>
+
         <div class="blue">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.816298291303!2d51.425662515264165!3d35.656897380200064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f91fe062d0afe2d%3A0xeb73a542457!2zKFNob3BrZXQpLdmB2LHZiNi02q_Yp9mHINin24zZhtiq2LH24wg2LTYp9m-2qnYqg!5e0!3m2!1sen!2sir!4v1489423652371"
                     class="map-contact">
@@ -309,11 +301,11 @@
                 <p class="text-center margin-top-25"><img src="<?php bloginfo ('template_directory');?>/app/images/Group.png"></p>
             </div>
             <div class="col-md-12 col-xs-12">
-                <div class="social-footer"><i class="fa fa-instagram"></i></div>
-                <div class="social-footer"><i class="fa fa-facebook"></i></div>
-                <div class="social-footer"><i class="fa fa-google-plus"></i></div>
-                <div class="social-footer"><i class="fa fa-paper-plane"></i></div>
-                <div class="social-footer"><i class="fa fa-twitter"></i></div>
+                <div class="social-footer"><a href="#"><i class="fa fa-instagram"></i></a></div>
+                <div class="social-footer"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-footer"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                <div class="social-footer"><a href="#"><i class="fa fa-paper-plane"></i></a></div>
+                <div class="social-footer"><a href="#"><i class="fa fa-twitter"></i></a></div>
             </div>
             <span class="text-center font-footer">Powerd By <a href="http://cotint.ir" target="_blank"><span
                             class="cotint">Co|tint</span></a> 2017</span>
@@ -326,6 +318,15 @@
 <script src="<?php bloginfo ('template_directory');?>/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo ('template_directory');?>/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="<?php bloginfo ('template_directory');?>/dest/js/app.js"></script>
+<script>
+    (function ($) {
+        $(window).on("load", function () {
+            $(".content-a1").mCustomScrollbar({
+                axis: "yx"
+            });
+        });
+    })(jQuery);
+</script>
 <script>
     $(document).ready(function(e) {
         $(".btn-top").click(function(e) {
