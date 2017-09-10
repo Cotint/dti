@@ -274,7 +274,7 @@
         </div>
         <div class="col-md-6 col-xs-12">
             <h2 class="contact"><?php the_field('contact_info', 11) ?></h2>
-            <p class="text-justify"><?php the_field('summery_contact_info', 11) ?></p>
+<!--            <p class="text-justify">--><?php //the_field('summery_contact_info', 11) ?><!--</p>-->
             <div class="row">
                 <div class="col-md-1 col-xs-2">
                     <div class="social"><i class="fa fa-map-marker"></i></div>

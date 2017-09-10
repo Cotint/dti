@@ -42,8 +42,9 @@ $(document).ready(function(e) {
 
 $(document).ready(function () {
     $('#topSlider').owlCarousel({
+        autoplay:true,
         rtl: true,
-        loop: false,
+        loop: true,
         margin: 0,
         nav: true,
         navText: ["<i class='fa fa-chevron-left next'></i>", "<i class='fa fa-chevron-right prev'></i>"],
