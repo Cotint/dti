@@ -327,12 +327,13 @@ a {
 .big {
   width: 200px;
   height: 200px;
-  background-color: $color-white;
+  background-color: #fff;
   border: 1px solid #acacac;
   border-radius: 100px;
+  display: block;
+  margin: 0 auto;
   position: relative;
   top: -100px;
-  left: 17%;
 }
 
 .big img {
@@ -503,13 +504,14 @@ a {
 }
 
 .servic-box {
+  display: block;
+  margin: 0 auto;
   width: 100px;
   height: 100px;
   border: 1px solid #ddd;
   border-radius: 100px;
   position: relative;
   top: 20px;
-  left: 40%;
   i {
     text-align: center;
     font-size: 28px;
@@ -538,7 +540,8 @@ a {
   display: flex;
   justify-content: center;
   .btn-class {
-    width: 140px;
+    min-width: 140px;
+    width: auto;
     background-color: $color-white;
     border-radius: 1px;
     color: $color-dark-gray;
@@ -997,8 +1000,8 @@ figure.effect-ming:hover img {
 #comment {
   height: 180px !important;
   max-height: 180px;
-  width:525px;
-  max-width: 525px;
+  width:100%;
+  max-width:100%;
 
 }
 
@@ -1042,7 +1045,6 @@ figure.effect-ming:hover img {
   display: inline-block;
   margin-right: 10px;
   position: relative;
-  left: 513px;
   margin-bottom: 30px;
   i {
     margin-top: 11px;

@@ -49,6 +49,8 @@
     margin-bottom: 50px;
   }
   .servic-box {
+    display: block;
+    margin: 0 auto;
     width: 100px;
     height: 100px;
     border: 1px solid #ddd;
@@ -56,7 +58,7 @@
     position: relative;
     top: 20px;
     bottom: 20px;
-    left: 28%;
+    left: 0px;
   }
 
   .sliderbottom {
@@ -135,47 +137,85 @@
     width: 279px;
     width: 100%;
   }
-  #diamond {
-    width: 65px;
-    height: 65px;
-    border: 2px solid #0dbff2;
-    background: $color-white;
-    margin: 0 0 0 30px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+  .portfolio {
     display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 85px;
-    z-index: 10000;
-  }
-  .marker{
-    font-size: 34px;
-    position: relative;
-    left: 129px;
-    color: #0dbff2;
-    top:20px;
-    z-index: 40000;
-  }
-  .social-footer {
-    position: relative;
-    left: 10px;
-    margin-bottom: 30px;
+    justify-content: center;
+    .btn-class {
+      min-width: 140px;
+      width: auto;
+      background-color: $color-white;
+      border-radius: 1px;
+      color: $color-dark-gray;
+      border: 1px solid $color-white-light;
+      margin-bottom: 40px;
+      margin-right: 10px;
+      &:hover{
+        background-color: $color-light-blue;
+        transition: all 400ms;
+        color: $color-white;
+        border: 1px solid $color-light-blue;
+      }
     }
-  .font-footer {
-    font-size: 18px;
-    color: #fff;
-    margin-left: 0px;
+    a {
+      color: #222;
+      text-align: center;
+      font-size: 20px;
+      &:hover {
+        color: $color-white;
+        transition: all 0.5s;
+      }
+    }
+    li {
+      padding-top: 9px;
+      list-style: none;
+      text-align: center;
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      &:hover {
+        background-color: $color-light-blue;
+        border: none;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .pdfrepon{
     position: relative;
-    left: 80px;
+    left: 30px;
+  }
+  .nav-fix2{
+    position:fixed;
+    z-index:5000;
+    margin-top: -100px;
+    width: 100%;
+    border-bottom: 2px solid  $color-light-blue;
+    height: 60px;
+    max-height: 60px;
+    .menu12 {
+      z-index:5000;
+      line-height: 1;
+      margin: 0 auto 3em;
+      margin-top: 20px;
+    }
+    .img-Nav2{
+      z-index:50000;
+      height: 50px;
+      padding-top: 9px;
+    }
+  }
+  .navbar-inverse2 {
+    background-color: #fff;
+    height: 60px;
+    border-color: #fff;
+  }
+  .navbar2 {
+    z-index: 10000;
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
   }
   .code{
     height: 35px;

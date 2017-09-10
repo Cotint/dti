@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>damun trading co</title>
+    <meta property="og:site_name" content="DTI" />
+    <meta name="description" content="Variability of the industrial projects in the country such as gas and petroleum projects, steel industries, mines, cement industries, sugar cane, water supply and agriculture along with the trust in Damun Tejarat Iranian,">
+    <meta name="keywords" content="Dti,damun,Trading,DamunTradingCo">
+    <meta name="author" content="Dti">
+    <title>DamunTradingCo|DTI</title>
     <link rel="stylesheet" href="<?php bloginfo ('template_directory');?>/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo ('template_directory');?>/node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
@@ -43,7 +47,7 @@
             <nav class="menu1 menu--shylock">
                 <ul class="menu__list">
                     <li class="menu__item" id="aboutnav"><a class="menu__link">About us</a></li>
-                    <li class="menu__item" id="customernav"><a class="menu__link">customers</a></li>
+                    <li class="menu__item" id="customernav"><a class="menu__link">Customers</a></li>
                     <li class="menu__item" id="servicenav"><a class="menu__link">Services</a></li>
                     <li class="menu__item" id="productsnav"><a class="menu__link">Products</a></li>
                     <li class="menu__item" id="latestnav"><a class="menu__link">Latest News</a></li>
@@ -53,17 +57,17 @@
         </section>
     </div>
 </header>
-<nav class="navbar navbar-inverse menu hidden-lg hidden-md">
+<nav class="navbar navbar2 navbar-inverse navbar-inverse2 menu2  hidden-lg hidden-md">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span
                         class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <img class="img-Nav" src="<?php bloginfo ('template_directory');?>/app/images/Group.png">
+            <img class="img-Nav img-Nav2" src="<?php bloginfo ('template_directory');?>/app/images/Group.png">
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li id="aboutnav"><a href="#">about</a></li>
-                <li id="customernav"><a href="#">customers</a></li>
+                <li id="customernav"><a href="#">Customers</a></li>
                 <li id="servicenav"><a href="#">Services</a></li>
                 <li id="productsnav"><a href="#">Products</a></li>
                 <li id="latestnav"><a href="#">Latest News</a></li>
@@ -151,11 +155,7 @@
             <h2 class="text-center"><?php the_field('top_left',9) ?></h2>
             <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_top_left',9) ?> </p>
         </div>
-        <div class="service">
-            <div class="servic-box"><i class="fa fa-cogs"></i></div>
-            <h2 class="text-center"><?php the_field('bottom_left',9) ?> </h2>
-            <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_bottom_left',9) ?></p>
-        </div>
+
     </div>
     <div class="col-md-6">
         <div class="service">
@@ -163,11 +163,7 @@
             <h2 class="text-center"><?php the_field('top_right',9) ?></h2>
             <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_top_right',9) ?></p>
         </div>
-        <div class="service">
-            <div class="servic-box"><i class="fa fa-cogs"></i></div>
-            <h2 class="text-center"><?php the_field('bottom_right',9) ?></h2>
-            <p class="text-justify mCustomScrollbar content-a1" data-mcs-theme="minimal-dark"><?php the_field('summery_bottom_right',9) ?> </p>
-        </div>
+
     </div>
 </main>
 <br>
@@ -204,7 +200,7 @@
 </main>
 
 <main id="latest" class="container-fluid later">
-    <p class="text-center about-T">LATEST NEWS</p>
+    <p class="text-center about-T">Latest News</p>
     <p class="text-center"><img class="responsiv" src="<?php bloginfo ('template_directory');?>/app/images/transi.png" alt="code"></p>
     <div class="owl-carousel owl-theme sliderbottom" id="bottomslider">
         <?php
@@ -221,7 +217,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="latest">
-                            <h2><?php the_date('y/m/d'); ?>__<?php the_time(); ?></h2>
+                            <h2> <?php the_time(); ?> | <?php the_date('y/m/d'); ?></h2>
                             <p><?php the_content(); ?></p>
                         </div>
                     </div>
@@ -254,28 +250,28 @@
             <h2 class="contact"><?php the_field('contact_info',11) ?></h2>
             <p class="text-justify"><?php the_field('summery_contact_info',11) ?></p>
             <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-1 col-xs-2">
                     <div class="social"><i class="fa fa-map-marker"></i></div>
                 </div>
-                <div class="col-md-10 text-Contact">
+                <div class="col-md-10 col-xs-6 text-Contact">
                     <span>ADRRESS</span>
                     <P><?php the_field('address',11) ?></P>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-1 col-xs-2">
                     <div class="social"><i class="fa fa-phone"></i></div>
                 </div>
-                <div class="col-md-10 text-Contact">
+                <div class="col-md-10 col-xs-4 text-Contact">
                     <span>PHONE</span>
                     <P><?php the_field('phone',11) ?></P>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-1 col-xs-2">
                     <div class="social"><i class="fa fa-envelope"></i></div>
                 </div>
-                <div class="col-md-10 text-Contact">
+                <div class="col-md-10 col-xs-4 text-Contact">
                     <span>E-MAIL</span>
                     <P><a style="color: #222222" href="mailto:<?php the_field('email',11) ?>"><?php the_field('email',11) ?></a></P>
                 </div>
@@ -288,8 +284,7 @@
         <div id="diamond"><i class="fa fa-map-marker marker"></i></div>
 
         <div class="blue">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.816298291303!2d51.425662515264165!3d35.656897380200064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f91fe062d0afe2d%3A0xeb73a542457!2zKFNob3BrZXQpLdmB2LHZiNi02q_Yp9mHINin24zZhtiq2LH24wg2LTYp9m-2qnYqg!5e0!3m2!1sen!2sir!4v1489423652371"
-                    class="map-contact">
+            <iframe class="map-contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200.609959389039!2d48.51242685180933!3d36.65983287214001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM5JzM0LjUiTiA0OMKwMzAnNDUuMiJF!5e0!3m2!1sen!2sir!4v1504785336038" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
             </iframe>
         </div>
     </section>
@@ -300,14 +295,14 @@
             <div class="col-md-12 col-xs-12">
                 <p class="text-center margin-top-25"><img src="<?php bloginfo ('template_directory');?>/app/images/Group.png"></p>
             </div>
-            <div class="col-md-12 col-xs-12">
+            <div style="display: flex; justify-content: center;" class="col-md-12 col-xs-12">
                 <div class="social-footer"><a href="#"><i class="fa fa-instagram"></i></a></div>
                 <div class="social-footer"><a href="#"><i class="fa fa-facebook"></i></a></div>
                 <div class="social-footer"><a href="#"><i class="fa fa-google-plus"></i></a></div>
                 <div class="social-footer"><a href="#"><i class="fa fa-paper-plane"></i></a></div>
                 <div class="social-footer"><a href="#"><i class="fa fa-twitter"></i></a></div>
             </div>
-            <span class="text-center font-footer">Powerd By <a href="http://cotint.ir" target="_blank"><span
+            <span class="text-center font-footer">Powered By <a href="http://cotint.ir" target="_blank"><span
                             class="cotint">Co|tint</span></a> 2017</span>
         </footer>
     </div>
