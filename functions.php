@@ -95,8 +95,7 @@ function f711_get_post_content_callback()
                         <img height="270px" width="100%" src="<?php echo $thumb[0] ?>">
                         <figcaption>
                             <button class="btn more post" data-toggle="modal" data-target="#<?php echo $post->ID ?>">MORE</button>
-                                            <p style="font-size: 18px; position: relative; top: -15px;
-    margin-top: -35px;"><?php echo $post->post_title ?></p>
+
                         </figcaption>
                     </figure>
 

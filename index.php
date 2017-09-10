@@ -71,7 +71,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li id="aboutnav"><a href="#">about</a></li>
+                <li id="aboutnav"><a href="#">About Us</a></li>
                 <li id="customernav"><a href="#">Customers</a></li>
                 <li id="servicenav"><a href="#">Services</a></li>
                 <li id="productsnav"><a href="#">Products</a></li>
@@ -81,9 +81,20 @@
         </div>
     </div>
 </nav>
-<div class="sliders-img">
-    <?php echo do_shortcode('[layerslider id="1"]') ?>
+<div style="height: 500px;" class="owl-carousel owl-theme slider" id="topSlider">
+<div class="item">
+<img src="<?php bloginfo('template_directory'); ?>/app/images/images1.jpg" height="550px">
 </div>
+<div class="item">
+<img src="<?php bloginfo('template_directory'); ?>/app/images/images2.jpg" height="550px">
+</div>
+<div class="item">
+<img src="<?php bloginfo('template_directory'); ?>/app/images/images3.jpg" height="550px">
+</div>
+</div>
+<!--<div class="sliders-img">-->
+<!--    --><?php //echo do_shortcode('[layerslider id="1"]') ?>
+<!--</div>-->
 <main id="about" class="container">
     <p class="text-center about-T"><?php the_field('about', 7) ?></p>
     <p class="text-center"><img class="code" src="<?php bloginfo('template_directory'); ?>/app/images/dti-code.jpg"
@@ -123,7 +134,7 @@
 
 <main id="costomers" class="container-fluid backgrund">
     <p class="text-center about-Customer"><span style="color:#FFF; font-size: 27px;">OUR</span> <span
-                style="color:#363636; font-size: 27px;">customers</span>
+                style="color:#fff; font-size: 27px;">CUSTOMERS</span>
     </p>
     <p class="text-center"><img class="imagew" src="<?php bloginfo('template_directory'); ?>/app/images/transi.png"
                                 alt="code"></p>
