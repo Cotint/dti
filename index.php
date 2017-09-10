@@ -269,6 +269,15 @@
             </div>
             <div class="row">
                 <div class="col-md-1 col-xs-2">
+                    <div class="social"><i class="fa fa-phone"></i></div>
+                </div>
+                <div class="col-md-10 col-xs-4 text-Contact">
+                    <span>MOBILE</span>
+                    <P><?php the_field('mobile',11) ?></P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 col-xs-2">
                     <div class="social"><i class="fa fa-envelope"></i></div>
                 </div>
                 <div class="col-md-10 col-xs-4 text-Contact">
