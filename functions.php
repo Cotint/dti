@@ -70,7 +70,7 @@ function f711_get_post_content_callback()
                                 <p class="text-justify"><?php echo $post->post_content ?></p>
                                 <a style="position: relative; top: 7px; left: -120px; text-align: left;" href="<?php the_field('pdf', $post->ID) ?>"
                                    download target="_blank"><i style="font-size: 30px;"
-                                               class="fa fa-file-pdf-o"></i></a>
+                                               class="fa fa-file-pdf-o pdfrepon"></i></a>
                                 <a href="<?php the_field('pdf', $post->ID) ?>" target="_blank">
                                     <button class="btn btnpdf">Download pdf
                                     </button>
