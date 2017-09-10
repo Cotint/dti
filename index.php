@@ -269,7 +269,7 @@
             </div>
             <div class="row">
                 <div class="col-md-1 col-xs-2">
-                    <div class="social"><i class="fa fa-phone"></i></div>
+                    <div class="social"><i style="font-size: 28px; margin-top: -4px; margin-left: 2px;" class="fa fa-mobile"></i></div>
                 </div>
                 <div class="col-md-10 col-xs-4 text-Contact">
                     <span>MOBILE</span>
